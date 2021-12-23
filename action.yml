@@ -1,0 +1,29 @@
+name: Cloudtype Github Actions - Connect Repository
+author: Cloudtype Inc
+description: Connect the Github repository with the Cloudtype Scope.
+inputs:
+  token:
+    description: Cloudtype access token
+    required: true
+  ghtoken:
+    description: >
+      GitHub Personal access token used to read & write repository deploy key
+      [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
+    required: false
+    default: ${{ github.token }}
+  repo:
+    description: Github repository name.
+    required: false
+    default: ${{ github.repository }}
+  endpoint:
+    description: Cloudtype API endpoint url.
+    required: false
+  scope:
+    description: Scope name to connect with `repo` repository.
+    required: false
+  readOnly:
+    description: Create a read-only deploy key.
+    required: false
+runs:
+  using: node12
+  main: dist/index.js
