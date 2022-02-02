@@ -1,6 +1,6 @@
-name: Cloudtype Github Actions - Connect Repository
+name: Cloudtype Github Actions - Connect
 author: Cloudtype Inc
-description: Connect the Github repository with the Cloudtype Scope.
+description: Connect the Github repository with the Cloudtype scope.
 inputs:
   token:
     description: Cloudtype access token
