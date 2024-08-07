@@ -2,7 +2,7 @@
 
 클라우드타입의 스코프에서 GitHub 리파지토리를 읽을 수 있도록 배포키(Deploy Key) 등 사전 작업을 실행합니다. 
 
-`cloudtype-github-actions/connect@v1`
+`cloudtype-github-actions/connect@v2`
 
 
 
@@ -36,14 +36,14 @@ GitHub 리파지토리 형식: `user/repo`. 기본값 현재 액션이 실행중
 
 
 ```yaml
-uses: cloudtype-github-actions/connect@v1
+uses: cloudtype-github-actions/connect@v2
 with:
   token: ${{ secrets.CLOUDTYPE_TOKEN }}
 ```
 
 
 ```yaml
-uses: cloudtype-github-actions/connect@v1
+uses: cloudtype-github-actions/connect@v2
 with:
   token: ${{ secrets.CLOUDTYPE_TOKEN }}
   ghtoken: ${{ secrets.GITHUB_TOKEN }}

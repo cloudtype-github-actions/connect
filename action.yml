@@ -25,5 +25,5 @@ inputs:
     description: Create a read-only deploy key.
     required: false
 runs:
-  using: node12
+  using: node20
   main: dist/index.js
